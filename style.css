@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face{
+    src:url("handlee.ttf");
+    font-family:hand;
+}
+
+#my-form{
+    position: relative;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 15%;
+    border-radius: 6px;
+    background-size: cover;
+    box-shadow: 2px 2px 5px grey;
+    height: 400px;
+    background-image: url("flower.jpg");
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
+    margin-bottom: 25px;
+    top: 6%;
+    text-align: center;
+    font-family: hand;
+}
+
+input::placeholder{
+    color:white;
+    padding-left: 6px;
+}
+
+
+#my-form input{
+    width: 80%;
+    height: 40px;
+    color: black;
+    font-size: 16px; 
+    border-radius: 10px;
+    border: 1px solid #627277fc;
+    background-color:#c8d3d578;
+  
+}
+    
+
+#post-btn{
+    width: 70%;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: none;
+    transition:all 0.2s;
+    background-color:hsl(145.1,38%,38.4%);
+    box-shadow: inset 2px 2px 4px  hsl(134.7,35%,24.8%);
+}
+
+#post-btn:hover{
+    background-color:hsl(134.7,35%,24.8%);
+}
+
+.or{
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-family: hand;
+    font-style: italic;
+    margin-top: 40px;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+
+#signup__link{
+    color: lightgreen;
+    font-family: hand;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: all 0.4s;
+}
+
+#signup__link:hover{
+    color: orange;
+}
+
+
+
+
+
+/*
+
+media queries for desktop
+*/
+
+@media screen and (min-width:480px){
+    #my-form{
+        width: 450px;
+    }
+}
+
